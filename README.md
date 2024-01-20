@@ -6,14 +6,14 @@ prioritizes performance, accessibility, and a seamless experience.
 Explore, engage, and curate your cinematic journey effortlessly with Movie Explorer.
 
 -	**Features**
-    o	Search that displays relevant movies based off query
-    o	Users can create accounts 
-    o	Users can like movies to add to lists
-    o	User reviews and ratings 
-    o	Users can create custom lists to save movies to
-    o	Users can add tag’s to films beyond what is initially added
-    o	Watch list display users list on homepage
-    o	Movie news section Imdb Api 
+o	Search that displays relevant movies based off query
+o	Users can create accounts 
+o	Users can like movies to add to lists
+o	User reviews and ratings 
+o	Users can create custom lists to save movies to
+o	Users can add tag’s to films beyond what is initially added
+o	Watch list display users list on homepage
+o	Movie news section Imdb Api 
 
 -	**Theme**
     o	https://www.themoviedb.org
