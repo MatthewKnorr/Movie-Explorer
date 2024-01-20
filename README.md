@@ -1,20 +1,23 @@
-# Introduction 
-TODO: Give a short introduction of your project. Let this section explain the objectives or the motivation behind this project. 
+# Overview
 
-# Getting Started
-TODO: Guide users through getting your code up and running on their own system. In this section you can talk about:
-1.	Installation process
-2.	Software dependencies
-3.	Latest releases
-4.	API references
+Movie Explorer is a user-friendly web app connecting movie enthusiasts to a vast database.
+Discover, like, and save movies, create custom lists, and stay updated. Tailored for casual viewers and film buffs, it 
+prioritizes performance, accessibility, and a seamless experience.
+Explore, engage, and curate your cinematic journey effortlessly with Movie Explorer.
 
-# Build and Test
-TODO: Describe and show how to build your code and run the tests. 
+-	**Features**
+    o	Search that displays relevant movies based off query
+    o	Users can create accounts 
+    o	Users can like movies to add to lists
+    o	User reviews and ratings 
+    o	Users can create custom lists to save movies to
+    o	Users can add tag’s to films beyond what is initially added
+    o	Watch list display users list on homepage
+    o	Movie news section Imdb Api 
 
-# Contribute
-TODO: Explain how other users and developers can contribute to make your code better. 
+-	**Theme**
+    o	https://www.themoviedb.org
+    o	https://www.cinemark.com
 
-If you want to learn more about creating good readme files then refer the following [guidelines](https://docs.microsoft.com/en-us/azure/devops/repos/git/create-a-readme?view=azure-devops). You can also seek inspiration from the below readme files:
-- [ASP.NET Core](https://github.com/aspnet/Home)
-- [Visual Studio Code](https://github.com/Microsoft/vscode)
-- [Chakra Core](https://github.com/Microsoft/ChakraCore)
+-	**Target Audience**
+    o	Movie Enthusiasts and casual viewers who seek a user-friendly platform for discovering, exploring, and staying updated on new and popular films
