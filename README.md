@@ -15,9 +15,11 @@ Explore, engage, and curate your cinematic journey effortlessly with Movie Explo
 	- Watch list display users list on homepage
 	- Movie news section Imdb Api 
 
+
 -	**Theme**
     - https://www.themoviedb.org
     - https://www.cinemark.com
+
 
 -	**Target Audience**
     - Movie Enthusiasts and casual viewers who seek a user-friendly platform for discovering, exploring, and staying updated on new and popular films
