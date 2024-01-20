@@ -16,8 +16,8 @@ Explore, engage, and curate your cinematic journey effortlessly with Movie Explo
 	- Movie news section Imdb Api 
 
 -	**Theme**
-    o	https://www.themoviedb.org
-    o	https://www.cinemark.com
+    - https://www.themoviedb.org
+    - https://www.cinemark.com
 
 -	**Target Audience**
-    o	Movie Enthusiasts and casual viewers who seek a user-friendly platform for discovering, exploring, and staying updated on new and popular films
+    - Movie Enthusiasts and casual viewers who seek a user-friendly platform for discovering, exploring, and staying updated on new and popular films
