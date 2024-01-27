@@ -20,6 +20,7 @@ engage, and embark on your personalized cinematic journey with Movie Explorer.
 	- Movie news section Imdb Api 
 
     
+    
 -   **Problem/Opportunity**
         Often, finding quality movie recommendations is hindered by low-quality comments and generic
         critiques. Movie Explorer addresses this by allowing users to discover realistic recommendations
