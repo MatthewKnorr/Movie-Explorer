@@ -16,13 +16,10 @@ engage, and embark on your personalized cinematic journey with Movie Explorer.
 	- User reviews and ratings 
 	- Users can create custom lists to save movies to
 	- Users can add tag’s to films beyond what is initially added
-	- Watch list display users list on homepage
-	- Movie news section Imdb Api 
-
-    
+	- Watch list display users list on homepage  
     
 -   **Problem/Opportunity**
-        Often, finding quality movie recommendations is hindered by low-quality comments and generic
+    -   Often, finding quality movie recommendations is hindered by low-quality comments and generic
         critiques. Movie Explorer addresses this by allowing users to discover realistic recommendations
         based on personalized lists they create. Users can also explore lists created by others with
         similar tastes, fostering a community of genuine film enthusiasts.
