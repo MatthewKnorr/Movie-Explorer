@@ -1,43 +1,43 @@
 {
   "Files": [
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\bin\\Debug\\net8.0\\wwwroot\\_framework\\blazor.webassembly.js",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\obj\\Debug\\net8.0\\compressed\\6ig7kq95ma.gz",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\obj\\Debug\\net8.0\\compressed\\qujjvsh7wr.gz",
       "PackagePath": "staticwebassets\\_framework\\blazor.webassembly.js.gz"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Movie Explorer.styles.css",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\obj\\Debug\\net8.0\\scopedcss\\bundle\\Movie Explorer.styles.css",
       "PackagePath": "staticwebassets\\Movie Explorer.styles.css"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\app.css",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\app.css",
       "PackagePath": "staticwebassets\\css\\app.css"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\bootstrap\\bootstrap.min.css",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\css\\bootstrap\\bootstrap.min.css.map",
       "PackagePath": "staticwebassets\\css\\bootstrap\\bootstrap.min.css.map"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\favicon.png",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\favicon.png",
       "PackagePath": "staticwebassets\\favicon.png"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\icon-192.png",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\icon-192.png",
       "PackagePath": "staticwebassets\\icon-192.png"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\index.html",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\index.html",
       "PackagePath": "staticwebassets\\index.html"
     },
     {
-      "Id": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\wwwroot\\sample-data\\weather.json",
+      "Id": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\wwwroot\\sample-data\\weather.json",
       "PackagePath": "staticwebassets\\sample-data\\weather.json"
     },
     {

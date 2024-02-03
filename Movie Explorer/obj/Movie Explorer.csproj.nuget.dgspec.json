@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {}
+    "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {}
   },
   "projects": {
-    "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {
+    "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+        "projectUniqueName": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
         "projectName": "Movie Explorer",
-        "projectPath": "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+        "projectPath": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
         "packagesPath": "C:\\Users\\brandon\\.nuget\\packages\\",
-        "outputPath": "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\obj\\",
+        "outputPath": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\brandon\\AppData\\Roaming\\NuGet\\NuGet.Config"

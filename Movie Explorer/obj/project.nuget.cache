@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "Qmb3OtfF1Cuei9yp8uu/Qimpg4fH3UzaG2Ip+vNQek/Z8gB9HIPUe1j/ttHhylw028IPNsYGyEdLdRr9xvBVNQ==",
+  "dgSpecHash": "9Ir/yNYdvxnT+svTWuWN6+uEsX4eLA5WNI9u/GCW5lHcMDWDMWmbj3Js/ySITgxfmLj1k7dJa5uDaleXS69lMg==",
   "success": true,
-  "projectFilePath": "D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+  "projectFilePath": "d:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\brandon\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.1\\microsoft.aspnetcore.authorization.8.0.1.nupkg.sha512",
     "C:\\Users\\brandon\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.1\\microsoft.aspnetcore.components.8.0.1.nupkg.sha512",
@@ -35,12 +35,5 @@
     "C:\\Users\\brandon\\.nuget\\packages\\system.text.json\\8.0.0\\system.text.json.8.0.0.nupkg.sha512",
     "C:\\Users\\brandon\\.nuget\\packages\\microsoft.netcore.app.runtime.mono.browser-wasm\\8.0.1\\microsoft.netcore.app.runtime.mono.browser-wasm.8.0.1.nupkg.sha512"
   ],
-  "logs": [
-    {
-      "code": "Undefined",
-      "level": "Warning",
-      "warningLevel": 1,
-      "message": "Problem reading the cache file D:\\Coding\\202401_Winter\\cse325\\Movie Explorer\\Movie Explorer\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
-    }
-  ]
+  "logs": []
 }

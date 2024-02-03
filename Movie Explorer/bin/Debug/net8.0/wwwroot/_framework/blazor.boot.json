@@ -1,12 +1,12 @@
 {
   "mainAssemblyName": "Movie Explorer",
   "resources": {
-    "hash": "sha256-QTEdB4p0BKlFPqPqcgx1RhfinirzNqN/RuwoV0jxR14=",
+    "hash": "sha256-/psvv1IFdw1YKN/PqmFZNMEA0+7z9Rtg+X+Vw8d+RYk=",
     "jsModuleNative": {
-      "dotnet.native.8.0.1.dwjpu537f6.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
+      "dotnet.native.8.0.1.rvn1xoajup.js": "sha256-SGOlISx+3G4kkvpC9Uq3qoPGsnjxGmW61QBev0lyI5U="
     },
     "jsModuleRuntime": {
-      "dotnet.runtime.8.0.1.mrgyg8l3pd.js": "sha256-HZOoaGpz9ekMa/oSmeApSKp3DXNdVUq2UBqsTIIiN8A="
+      "dotnet.runtime.8.0.1.49we6ixpe0.js": "sha256-HZOoaGpz9ekMa/oSmeApSKp3DXNdVUq2UBqsTIIiN8A="
     },
     "wasmNative": {
       "dotnet.native.wasm": "sha256-dqpunZywlYy86b4O6ZjONasmG+4FH0P17FZ0OIf/lIg="
@@ -208,10 +208,10 @@
       "mscorlib.wasm": "sha256-EpWTfh4m/hEcXRFYMCR9YeYHwdUJgcm1laBaxWfq2S4=",
       "netstandard.wasm": "sha256-2kH24/YfHmU3B4eYRyRmiwebYROM4+B9eDWKvMnUdP8=",
       "System.Private.CoreLib.wasm": "sha256-CsySKiP7HYY1pS8LTDE60EkqiX5oHb3WoEZHDNd1yK0=",
-      "Movie Explorer.wasm": "sha256-6neMDykHbTWgx6GRaSehgYzgkFGvXzCzkRgvVfCCoD8="
+      "Movie Explorer.wasm": "sha256-ceK8nikA+Gkkf5Fh0PZYMRB4SO9Hxpvgw8fJtzwQPSQ="
     },
     "pdb": {
-      "Movie Explorer.pdb": "sha256-4pVHFwheBwZ1jcZY9nIjbmrIOAjmhiJQ6w+jOCfB+JI="
+      "Movie Explorer.pdb": "sha256-VtSVdMDRZ91bDt5NwEFeRjKxFCBTjTgELzr2M2WNNyg="
     }
   },
   "cacheBootResources": true,
