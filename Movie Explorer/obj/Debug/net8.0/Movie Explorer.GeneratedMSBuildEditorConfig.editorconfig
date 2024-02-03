@@ -13,39 +13,39 @@ build_property.EnforceExtendedAnalyzerRules =
 build_property._SupportedPlatformList = browser
 build_property.RootNamespace = Movie_Explorer
 build_property.RootNamespace = Movie_Explorer
-build_property.ProjectDir = D:\Coding\202401_Winter\cse325\Movie Explorer\Movie Explorer\
+build_property.ProjectDir = D:\code\byui\CSE 325\CSE-325\Movie Explorer\Movie Explorer\
 build_property.EnableComHosting = 
 build_property.EnableGeneratedComInterfaceComImportInterop = false
 build_property.RazorLangVersion = 8.0
 build_property.SupportLocalizedComponentNames = 
 build_property.GenerateRazorMetadataSourceChecksumAttributes = 
-build_property.MSBuildProjectDirectory = D:\Coding\202401_Winter\cse325\Movie Explorer\Movie Explorer
+build_property.MSBuildProjectDirectory = D:\code\byui\CSE 325\CSE-325\Movie Explorer\Movie Explorer
 build_property._RazorSourceGeneratorDebug = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/App.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/App.razor]
 build_metadata.AdditionalFiles.TargetPath = QXBwLnJhem9y
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/Pages/Counter.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/Pages/Counter.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcQ291bnRlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/Pages/Home.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/Pages/Home.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcSG9tZS5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/Pages/Weather.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/Pages/Weather.razor]
 build_metadata.AdditionalFiles.TargetPath = UGFnZXNcV2VhdGhlci5yYXpvcg==
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/_Imports.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/_Imports.razor]
 build_metadata.AdditionalFiles.TargetPath = X0ltcG9ydHMucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = 
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/Layout/MainLayout.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/Layout/MainLayout.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE1haW5MYXlvdXQucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-e9ial5qcuk
 
-[D:/Coding/202401_Winter/cse325/Movie Explorer/Movie Explorer/Layout/NavMenu.razor]
+[D:/code/byui/CSE 325/CSE-325/Movie Explorer/Movie Explorer/Layout/NavMenu.razor]
 build_metadata.AdditionalFiles.TargetPath = TGF5b3V0XE5hdk1lbnUucmF6b3I=
 build_metadata.AdditionalFiles.CssScope = b-3msi5vu4ku
