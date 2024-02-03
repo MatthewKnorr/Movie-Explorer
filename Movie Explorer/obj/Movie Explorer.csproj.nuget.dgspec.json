@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {}
+    "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {}
   },
   "projects": {
-    "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {
+    "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+        "projectUniqueName": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
         "projectName": "Movie Explorer",
-        "projectPath": "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+        "projectPath": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
         "packagesPath": "C:\\Users\\SkyGuy\\.nuget\\packages\\",
-        "outputPath": "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\obj\\",
+        "outputPath": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"

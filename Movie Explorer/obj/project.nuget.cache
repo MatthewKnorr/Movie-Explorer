@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "6OcMokj6RCNKEB6zVhe3tJSb68HC1/pX/O5t5ZXX5XHbHPoOk+O7UUx9P5edjyrI3phe98jQtUHcc12dfWTLBA==",
+  "dgSpecHash": "EDcvmK1iTcIyeJ17bDSfNe72zcozP9y7gqSgd0a6NHXAVcxIY4wUgqTOUulYyqXvMQuv2266vPqzQUwV1aR/LQ==",
   "success": true,
-  "projectFilePath": "D:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
+  "projectFilePath": "d:\\code\\byui\\CSE 325\\CSE-325\\Movie Explorer\\Movie Explorer\\Movie Explorer.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\SkyGuy\\.nuget\\packages\\microsoft.aspnetcore.authorization\\8.0.1\\microsoft.aspnetcore.authorization.8.0.1.nupkg.sha512",
     "C:\\Users\\SkyGuy\\.nuget\\packages\\microsoft.aspnetcore.components\\8.0.1\\microsoft.aspnetcore.components.8.0.1.nupkg.sha512",
