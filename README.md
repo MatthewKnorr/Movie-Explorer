@@ -1,9 +1,13 @@
 # Overview
 
-Movie Explorer is a user-friendly web app connecting movie enthusiasts to a vast database.
-Discover, like, and save movies, create custom lists, and stay updated. Tailored for casual viewers and film buffs, it 
-prioritizes performance, accessibility, and a seamless experience.
-Explore, engage, and curate your cinematic journey effortlessly with Movie Explorer.
+Welcome to Movie Explorer, your gateway to a captivating cinematic experience.
+As a user-friendly web app, Movie Explorer effortlessly connects movie enthusiasts to a
+vast database, allowing you to discover, like, and save movies with ease. Tailored for
+both casual viewers and film buffs, our platform prioritizes performance and
+accessibility, promising a smooth and engaging exploration of the film world. Whether
+you're seeking quick recommendations or diving into in-depth cinematic journeys,
+Movie Explorer empowers you to curate your movie preferences effortlessly. Explore,
+engage, and embark on your personalized cinematic journey with Movie Explorer.
 
 -	**Features**
     - Search that displays relevant movies based off query
@@ -12,9 +16,13 @@ Explore, engage, and curate your cinematic journey effortlessly with Movie Explo
 	- User reviews and ratings 
 	- Users can create custom lists to save movies to
 	- Users can add tag’s to films beyond what is initially added
-	- Watch list display users list on homepage
-	- Movie news section Imdb Api 
-
+	- Watch list display users list on homepage  
+    
+-   **Problem/Opportunity**
+    -   Often, finding quality movie recommendations is hindered by low-quality comments and generic
+        critiques. Movie Explorer addresses this by allowing users to discover realistic recommendations
+        based on personalized lists they create. Users can also explore lists created by others with
+        similar tastes, fostering a community of genuine film enthusiasts.
 
 -	**Theme**
     - https://www.themoviedb.org
