@@ -1,5 +1,9 @@
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.GeneratedMSBuildEditorConfig.editorconfig
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfoInputs.cache
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfo.cs
-Movie Explorer/obj/Debug/net8.0/project.razor.vscode.bin
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.assets.cache
+Movie Explorer/bin/Debug/net8.0/
+Movie Explorer/bin/Debug/net8.0/*.dll
+
+Movie Explorer/bin/Debug/net8.0/wwwroot/_framework/*.gz
+Movie Explorer/bin/Debug/net8.0/wwwroot/_framework/*.dat
+Movie Explorer/obj/Debug/net8.0/compressed/*.gz
+Movie Explorer/obj/Debug/net8.0/tmp-webcil/*.wasm
+Movie Explorer/obj/Debug/net8.0/webcil/*.wasm
+
