@@ -259,6 +259,10 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.GeneratedMSBuildEditorConfig.editorconfig
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfo.cs
-Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfoInputs.cache
+*Movie Explorer/obj/Debug/net8.0/Movie Explorer.GeneratedMSBuildEditorConfig.editorconfig
+*Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfo.cs
+*Movie Explorer/obj/Debug/net8.0/Movie Explorer.AssemblyInfoInputs.cache
+*Movie Explorer/obj/Movie Explorer.csproj.nuget.dgspec.json
+*Movie Explorer/obj/Movie Explorer.csproj.nuget.g.props
+*Movie Explorer/obj/project.assets.json
+*Movie Explorer/obj/project.nuget.cache
