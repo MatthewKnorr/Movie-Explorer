@@ -11,20 +11,19 @@ public class OMDBService
     public OMDBService(HttpClient httpClient)
     {
         _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-        _apiKey = "9275f68f"; //  OMDB API key
+        _apiKey = "9275f68f"; // OMDB API key
     }
 
-    public async Task<MovieInfo> GetMovieInfoAsync(string imdbId)
+    public async Task<MovieInfo> GetMovieInfoAsync(string title)
     {
         try
         {
-            var response = await _httpClient.GetAsync($"http://www.omdbapi.com/?i={imdbId}&apikey={_apiKey}");
+            var response = await _httpClient.GetAsync($"http://www.omdbapi.com/?t={Uri.EscapeDataString(title)}&apikey={_apiKey}");
 
             if (response.IsSuccessStatusCode)
             {
                 var content = await response.Content.ReadAsStringAsync();
                 var movieInfo = JsonSerializer.Deserialize<MovieInfo>(content);
-
                 return movieInfo;
             }
             else

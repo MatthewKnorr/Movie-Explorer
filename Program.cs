@@ -1,5 +1,5 @@
-using Microsoft.AspNetCore.Components.Web;
 using Microsoft.AspNetCore.Components.WebAssembly.Hosting;
+using Microsoft.AspNetCore.Components.Web;
 using Movie_Explorer;
 
 var builder = WebAssemblyHostBuilder.CreateDefault(args);
