@@ -9,22 +9,32 @@
     <button class="search-button" @onclick="Search">Search</button>
 </div>
 
-@if (MovieInfo != null)
+@if (MovieInfos != null && MovieInfos.Any())
 {
-    <div class="movie-info">
-        <h2>@MovieInfo.Title</h2>
-        <p><strong>Year:</strong> @MovieInfo.Year</p>
-        <p><strong>Plot:</strong> @MovieInfo.Plot</p>
+    <div class="movie-list">
+        @foreach (var movieInfo in MovieInfos)
+        {
+            <div class="movie-info">
+                <h2>@movieInfo.Title</h2>
+                <p><strong>Year:</strong> @movieInfo.Year</p>
+                <p><strong>Plot:</strong> @movieInfo.Plot</p>
+                <!-- Add more properties as needed -->
+            </div>
+        }
     </div>
+}
+else if (MovieInfos != null && !MovieInfos.Any())
+{
+    <p>No movies found.</p>
 }
 
 @code {
     private string SearchQuery { get; set; }
-    private MovieInfo MovieInfo { get; set; }
+    private List<MovieInfo> MovieInfos { get; set; } = new List<MovieInfo>();
 
     private async Task Search()
     {
         OMDBService omdbService = new OMDBService(new HttpClient());
-        MovieInfo = await omdbService.GetMovieInfoAsync(SearchQuery);
+        MovieInfos = await omdbService.SearchMoviesAsync(SearchQuery);
     }
 }
