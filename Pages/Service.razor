@@ -1,0 +1,87 @@
+﻿@page "/search"
+
+<PageTitle>Search</PageTitle>
+
+<h1>Search for a movie</h1>
+
+<style>
+    /* CSS for movie cards */
+    .movie-container {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+    }
+
+    .movie-card {
+        width: 300px;
+        margin: 20px;
+        padding: 15px;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        transition: box-shadow 0.3s ease;
+    }
+
+    .movie-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+    }
+
+    .movie-info h2 {
+        margin-top: 0;
+    }
+
+    .movie-info p {
+        margin: 5px 0;
+    }
+</style>
+
+<div class="search-container">
+    <input type="text" class="search-input" @bind="SearchQuery" placeholder="Search...">
+    <button class="search-button" @onclick="Search">Search</button>
+</div>
+
+@if (MovieInfos != null)
+{
+    @if (MovieInfos.Any())
+    {
+        <div class="movie-container">
+            @foreach (var movieInfo in MovieInfos)
+            {
+                <div class="movie-card">
+                    <div class="movie-info">
+                        <h2>@movieInfo.Title</h2>
+                        <p><strong>Year:</strong> @movieInfo.Year</p>
+                        <p><strong>Plot:</strong> @movieInfo.Plot.Substring(0, Math.Min(@movieInfo.Plot.Length, 100))</p>
+                        <p><strong>Rated:</strong> @movieInfo.Rated</p>
+                        <p><strong>Runtime:</strong> @movieInfo.Runtime</p>
+                        <p><strong>Awards:</strong> @movieInfo.Awards</p>
+                        <p><strong>Box Office:</strong> @movieInfo.BoxOffice</p>
+                    </div>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>No movies found.</p>
+    }
+}
+
+@code {
+    private string SearchQuery { get; set; } = "";
+
+    private List<MovieInfo> MovieInfos { get; set; } = new List<MovieInfo>();
+
+    private async Task Search()
+    {
+        if (!string.IsNullOrWhiteSpace(SearchQuery))
+        {
+            OMDBService omdbService = new OMDBService(new HttpClient());
+            MovieInfos = await omdbService.SearchMoviesAsync(SearchQuery);
+        }
+        else
+        {
+            MovieInfos.Clear();
+        }
+    }
+}

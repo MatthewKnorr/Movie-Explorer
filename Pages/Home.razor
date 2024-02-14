@@ -1,5 +1,7 @@
 ﻿@page "/"
 
+@inject NavigationManager NavigationManager
+
 <PageTitle>Home</PageTitle>
 
 <h1>Hello, world!</h1>
@@ -9,32 +11,12 @@
     <button class="search-button" @onclick="Search">Search</button>
 </div>
 
-@if (MovieInfos != null && MovieInfos.Any())
-{
-    <div class="movie-list">
-        @foreach (var movieInfo in MovieInfos)
-        {
-            <div class="movie-info">
-                <h2>@movieInfo.Title</h2>
-                <p><strong>Year:</strong> @movieInfo.Year</p>
-                <p><strong>Plot:</strong> @movieInfo.Plot</p>
-                <!-- Add more properties as needed -->
-            </div>
-        }
-    </div>
-}
-else if (MovieInfos != null && !MovieInfos.Any())
-{
-    <p>No movies found.</p>
-}
-
 @code {
-    private string SearchQuery { get; set; }
-    private List<MovieInfo> MovieInfos { get; set; } = new List<MovieInfo>();
+    private string SearchQuery { get; set; } = "";
 
     private async Task Search()
     {
-        OMDBService omdbService = new OMDBService(new HttpClient());
-        MovieInfos = await omdbService.SearchMoviesAsync(SearchQuery);
+        NavigationManager.NavigateTo($"/search?query={Uri.EscapeDataString(SearchQuery)}");
+        await Task.Delay(0); // Adding this line to make the method asynchronous
     }
 }

@@ -4,6 +4,29 @@ using System.Net.Http;
 using System.Text.Json;
 using System.Threading.Tasks;
 
+public class MovieInfo
+{
+    public string Title { get; set; }
+    public string Year { get; set; }
+    public string Plot { get; set; }
+    public string Rated { get; set; }
+    public string Runtime { get; set; }
+    public string Awards { get; set; }
+    public string BoxOffice { get; set; }
+}
+
+public class MovieSearchResult
+{
+    public List<MovieSearchItem> Search { get; set; }
+}
+
+public class MovieSearchItem
+{
+    public string Title { get; set; }
+    public string Year { get; set; }
+    public string imdbID { get; set; }
+}
+
 public class OMDBService
 {
     private readonly HttpClient _httpClient;
@@ -32,12 +55,12 @@ public class OMDBService
 
                     foreach (var movie in movieSearchResult.Search)
                     {
-                        var detailedResponse = await _httpClient.GetAsync($"http://www.omdbapi.com/?i={movie.imdbID}&apikey={_apiKey}");
+                        var detailedResponse = await _httpClient.GetAsync($"http://www.omdbapi.com/?i={movie.imdbID}&apikey={_apiKey}&plot=short");
                         if (detailedResponse.IsSuccessStatusCode)
                         {
                             var detailedContent = await detailedResponse.Content.ReadAsStringAsync();
-                            var movieInfo = JsonSerializer.Deserialize<MovieInfo>(detailedContent);
-                            movieInfos.Add(movieInfo);
+                            var detailedMovieInfo = JsonSerializer.Deserialize<MovieInfo>(detailedContent);
+                            movieInfos.Add(detailedMovieInfo);
                         }
                     }
 
@@ -45,35 +68,12 @@ public class OMDBService
                 }
             }
 
-            // Handle unsuccessful response
             return null;
         }
         catch (Exception ex)
         {
-            // Handle exception
             Console.WriteLine($"Error: {ex.Message}");
             return null;
         }
     }
-}
-
-public class MovieInfo
-{
-    public string Title { get; set; }
-    public string Year { get; set; }
-    public string Plot { get; set; }
-    // Add more properties as needed
-}
-
-public class MovieSearchResult
-{
-    public List<MovieSearchItem> Search { get; set; }
-}
-
-public class MovieSearchItem
-{
-    public string Title { get; set; }
-    public string Year { get; set; }
-    public string imdbID { get; set; }
-    // Add more properties as needed
 }
