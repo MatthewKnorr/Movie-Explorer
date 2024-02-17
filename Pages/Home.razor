@@ -52,11 +52,10 @@
 
     private async Task Search()
     {
-        NavigationManager.NavigateTo($"/search?query={Uri.EscapeDataString(SearchQuery)}");
-        await Task.Delay(0); // Adding this line to make the method asynchronous
+        NavigationManager.NavigateTo($"/search/{Uri.EscapeDataString(SearchQuery)}");
+        await Task.Delay(0); 
     }
 
-    // Update if statement to check for username/password in the data file
     private async Task Login()
     {
 

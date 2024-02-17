@@ -13,18 +13,16 @@ public class MovieInfo
     public string Runtime { get; set; }
     public string Awards { get; set; }
     public string BoxOffice { get; set; }
+    public string Poster { get; set; }
+    public string Metascore { get; set; }
+    public string ImdbRating { get; set; }
+    public List<MovieRating> Ratings { get; set; }
 }
 
-public class MovieSearchResult
+public class MovieRating
 {
-    public List<MovieSearchItem> Search { get; set; }
-}
-
-public class MovieSearchItem
-{
-    public string Title { get; set; }
-    public string Year { get; set; }
-    public string imdbID { get; set; }
+    public string Source { get; set; }
+    public string Value { get; set; }
 }
 
 public class OMDBService
@@ -32,10 +30,10 @@ public class OMDBService
     private readonly HttpClient _httpClient;
     private readonly string _apiKey;
 
-    public OMDBService(HttpClient httpClient)
+    public OMDBService(HttpClient httpClient, string apiKey)
     {
         _httpClient = httpClient ?? throw new ArgumentNullException(nameof(httpClient));
-        _apiKey = "9275f68f"; // OMDB API key
+        _apiKey = apiKey ?? throw new ArgumentNullException(nameof(apiKey));
     }
 
     public async Task<List<MovieInfo>> SearchMoviesAsync(string query)
@@ -55,7 +53,7 @@ public class OMDBService
 
                     foreach (var movie in movieSearchResult.Search)
                     {
-                        var detailedResponse = await _httpClient.GetAsync($"http://www.omdbapi.com/?i={movie.imdbID}&apikey={_apiKey}&plot=short");
+                        var detailedResponse = await _httpClient.GetAsync($"http://www.omdbapi.com/?i={movie.imdbID}&apikey={_apiKey}&plot=short&r=json");
                         if (detailedResponse.IsSuccessStatusCode)
                         {
                             var detailedContent = await detailedResponse.Content.ReadAsStringAsync();
@@ -76,4 +74,16 @@ public class OMDBService
             return null;
         }
     }
+}
+
+public class MovieSearchResult
+{
+    public List<MovieSearchItem> Search { get; set; }
+}
+
+public class MovieSearchItem
+{
+    public string Title { get; set; }
+    public string Year { get; set; }
+    public string imdbID { get; set; }
 }
