@@ -266,3 +266,4 @@ __pycache__/
 *Movie Explorer/obj/Movie Explorer.csproj.nuget.g.props
 *Movie Explorer/obj/project.assets.json
 *Movie Explorer/obj/project.nuget.cache
+users.db-shm
