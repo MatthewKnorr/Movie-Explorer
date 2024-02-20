@@ -1,6 +1,7 @@
 ﻿@using Microsoft.AspNetCore.Identity
-@inject SignInManager<IdentityUser> SignInManager
-@inject UserManager<IdentityUser> UserManager
+@inject SignInManager<CustomUser> SignInManager
+@inject UserManager<CustomUser> UserManager
+@using Movie_Explorer.Models
 
 <ul class="navbar-nav">
 @if (SignInManager.IsSignedIn(User))
