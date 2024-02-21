@@ -21,13 +21,19 @@ public static class SeedData
                 return;   // DB has been seeded
             }
             
-            context.CustomUsers.AddRange(
-                new CustomUser
-                {
-                    Email = "b@c.com",
-                    LikedMovies = [],
-                }
-            );
+            var user = new CustomUser{
+                Email = "b@c.com",
+                LikedMovies = new List<LikedMovie>()
+            };
+
+            var likedMovie = new LikedMovie
+            {
+                Title = "Jaws"
+            };
+
+            user.LikedMovies.Add(likedMovie);
+
+            context.CustomUsers.Add(user);
             context.SaveChanges();
         }
     }

@@ -8,6 +8,6 @@ namespace Movie_Explorer.Models;
 
 public class CustomUser : IdentityUser
 {
-    public ICollection<LikedMovie> LikedMovies { get; set; }
+    public ICollection<LikedMovie>? LikedMovies { get; set; }
 }
 
