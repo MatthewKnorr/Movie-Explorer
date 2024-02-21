@@ -3,30 +3,26 @@
 @{
     ViewData["Title"] = "Home page";
 }
+
 <div class="text-center">
-    <h1 class="display-4">Welcome Search the Cinematic Universe</h1>
+    <h1 class="display-4">Welcome to the Cinematic Universe</h1>
 
     <!-- Search bar -->
-    <form id="searchForm">
+    <form id="searchForm" onsubmit="handleSearch(event)">
         <div class="input-group mb-3">
             <input type="text" class="form-control search-input" placeholder="Enter movie title" id="searchInput">
             <div class="input-group-append">
-                <button class="btn btn-primary search-button" type="button" onclick="search()">Search</button>
+                <button class="btn btn-primary search-button" type="submit">Search</button>
             </div>
         </div>
     </form>
-    <p>Login to display your liked films!</p>
-    
+
     <!-- Liked movie display area -->
-    <div id="likedMovieText"></div>
-    <!-- Display area for search results -->
-    <div id="searchResults" class="movie-container"></div>
-    
-    
+    <div id="likedMovies" class="movie-container">
+        <!-- Liked movies will be displayed here -->
+    </div>
 </div>
 
-
-
 @section Scripts {
-    <script src="~/js/site.js"></script>
+    <script src="~/js/Index.js"></script>
 }

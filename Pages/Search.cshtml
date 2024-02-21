@@ -1,0 +1,57 @@
+@page
+@model SearchModel
+@{
+    ViewData["Title"] = "Search page";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Search Results</h1>
+
+    <!-- Search bar -->
+    <form id="searchForm" onsubmit="handleSearch(event)">
+        <div class="input-group mb-3">
+            <input type="text" class="form-control search-input" placeholder="Enter movie title" id="searchInput">
+            <div class="input-group-append">
+                <button class="btn btn-primary search-button" type="submit">Search</button>
+            </div>
+        </div>
+    </form>
+
+    <div id="searchResults" class="movie-container">
+        <!-- Search results will be displayed here -->
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/Search.js"></script>
+    <script>
+        // This script will handle displaying search results on the search page
+        document.addEventListener('DOMContentLoaded', function () {
+            var query = getQueryVariable('query');
+            if (query) {
+                document.getElementById('searchInput').value = query;
+                search(); // Call the search function to display results
+            }
+        });
+
+        // Function to extract query parameter from URL
+        function getQueryVariable(variable) {
+            var query = window.location.search.substring(1);
+            var vars = query.split('&');
+            for (var i = 0; i < vars.length; i++) {
+                var pair = vars[i].split('=');
+                if (decodeURIComponent(pair[0]) === variable) {
+                    return decodeURIComponent(pair[1]);
+                }
+            }
+            return null;
+        }
+
+        // Function to handle form submission and redirect
+        function handleSearch(event) {
+            event.preventDefault(); // Prevent form submission
+            var query = document.getElementById('searchInput').value;
+            window.location.href = "/Search?query=" + encodeURIComponent(query);
+        }
+    </script>
+}
