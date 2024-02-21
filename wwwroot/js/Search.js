@@ -135,23 +135,23 @@ function displayMovieDetails(details, detailsDiv) {
     detailsDiv.appendChild(posterDiv);
 
     var rated = document.createElement("p");
-    rated.textContent = "Rated: " + details.Rated;
+    rated.textContent =  details.Rated;
     detailsDiv.appendChild(rated);
 
     var released = document.createElement("p");
-    released.textContent = "Released: " + details.Released;
+    released.textContent =  details.Released;
     detailsDiv.appendChild(released);
 
     var runtime = document.createElement("p");
-    runtime.textContent = "Runtime: " + details.Runtime;
+    runtime.textContent = details.Runtime;
     detailsDiv.appendChild(runtime);
 
     var genre = document.createElement("p");
-    genre.textContent = "Genre: " + details.Genre;
+    genre.textContent = details.Genre;
     detailsDiv.appendChild(genre);
 
     var plot = document.createElement("p");
-    plot.textContent = "Plot: " + details.Plot.substring(0, 350) + (details.Plot.length > 350 ? "..." : "");
+    plot.textContent = details.Plot.substring(0, 350) + (details.Plot.length > 350 ? "..." : "");
     detailsDiv.appendChild(plot);
 
     var awards = document.createElement("p");
