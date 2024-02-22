@@ -22,7 +22,11 @@ public static class SeedData
             }
             
             var user = new CustomUser{
+                UserName = "b@c.com",
                 Email = "b@c.com",
+                NormalizedUserName = "B@C.COM",
+                NormalizedEmail = "B@C.COM",                
+                PasswordHash = "AQAAAAIAAYagAAAAEFAQcynwVwLqYhX5XHrJTQi1uAXQO1Cs4xFh3kAJai9329KXyUDHmJMC9RZBSAeHDw==",
                 LikedMovies = new List<LikedMovie>()
             };
 

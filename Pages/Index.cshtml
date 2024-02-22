@@ -3,7 +3,6 @@
 @using Movie_Explorer.Models
 @inject SignInManager<CustomUser> SignInManager
 @inject UserManager<CustomUser> UserManager
-@inject GetLikedMovieList LikedMovieList
 
 @model IndexModel
 @{
@@ -28,6 +27,18 @@
         <h2>Liked Movies</h2>
         <ol id="likedMoviesList"></ol>
         <p id="likedMoviesCount"></p> 
+    </div>
+</div>
+    <!-- Liked movie display area -->
+    <div id="likedMoviesCS">
+        <h2>Liked Movies</h2>
+        <ol id="likedMoviesListCS">
+            @foreach (var movie in Model.LikedMovies)
+            {
+                <li>@movie.Title</li>
+            }
+        </ol>
+        <p id="likedMoviesCountCS">@Model.LikedMovies.Count</p> 
     </div>
 </div>
 
