@@ -24,21 +24,14 @@
     </form>
 
     <!-- Liked movie display area -->
-    <div id="likedMovies" class="movie-container">
-        <!-- Liked movies will be displayed here -->
+    <div id="likedMovies">
+        <h2>Liked Movies</h2>
+        <ol id="likedMoviesList"></ol>
+        <p id="likedMoviesCount"></p> 
     </div>
 </div>
 
-<!--   ＠if (SignInManager.IsSignedIn(User))
-    {
-    <div id="likedMovies" class="movie-container">
-        ＠foreach (LikedMovie movie in LikedMovieList.GetLikedMovies(＠User.Identity.Name))
-        {
-            <p>＠movie.Title</p>
-        }
-    </div>
--->
-
 @section Scripts {
     <script src="~/js/Index.js"></script>
+    <script src="~/js/LikedMovie.js"></script>
 }

@@ -1,44 +1,4 @@
-﻿// Array to store liked movies
-var likedMovies = [];
-
-// Function to like a movie
-function likeMovie(movieTitle) {
-    // Check if the movie is already liked
-    if (!likedMovies.includes(movieTitle)) {
-        likedMovies.push(movieTitle);
-        // Update liked movies display
-        updateLikedMoviesDisplay();
-        // Save liked movies to local storage
-        saveLikedMovies();
-    } else {
-        alert("You've already liked this movie!");
-    }
-}
-
-// Function to update the display of liked movies
-function updateLikedMoviesDisplay() {
-    var likedMoviesText = "The liked movies are: ";
-    for (var i = 0; i < likedMovies.length; i++) {
-        likedMoviesText += "\n- " + likedMovies[i];
-    }
-    document.getElementById("likedMovieText").innerText = likedMoviesText;
-}
-
-// Function to save liked movies to local storage
-function saveLikedMovies() {
-    localStorage.setItem("likedMovies", JSON.stringify(likedMovies));
-}
-
-// Function to load liked movies from local storage
-function loadLikedMovies() {
-    var storedLikedMovies = localStorage.getItem("likedMovies");
-    if (storedLikedMovies) {
-        likedMovies = JSON.parse(storedLikedMovies);
-        updateLikedMoviesDisplay();
-    }
-}
-
-// Search function
+﻿// Search function
 function search() {
     var searchTerm = document.getElementById("searchInput").value;
     var apiKey = "7f78f9aa"; 
@@ -170,6 +130,3 @@ function displayMovieDetails(details, detailsDiv) {
     boxOffice.textContent = "Box Office: " + details.BoxOffice;
     detailsDiv.appendChild(boxOffice);
 }
-
-// Load liked movies from local storage on page load
-window.onload = loadLikedMovies;
