@@ -17,6 +17,7 @@
         </div>
     </form>
 
+
     <div id="searchResults" class="movie-container">
         <!-- Search results will be displayed here -->
     </div>
@@ -24,14 +25,18 @@
 
 @section Scripts {
     <script src="~/js/Search.js"></script>
-    <script>
-        // This script will handle displaying search results on the search page
+    <script src="~/js/LikedMovie.js"></script>
+    <script>        // This script will handle displaying search results on the search page
         document.addEventListener('DOMContentLoaded', function () {
             var query = getQueryVariable('query');
             if (query) {
                 document.getElementById('searchInput').value = query;
                 search(); // Call the search function to display results
             }
+            
+            // Load and display liked movies list
+            initializeLikedMovies();
+            updateLikedMoviesDisplayOnSearchPage(); // Update liked movies display on the search page
         });
 
         // Function to extract query parameter from URL
