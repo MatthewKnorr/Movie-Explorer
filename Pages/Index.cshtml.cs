@@ -27,7 +27,7 @@ namespace Movie_Explorer.Pages
 
             if (user == null)
             {
-                return NotFound("No user is currently logged in. Log in to see the movies you've liked!");
+                return Page();
             }
 
             user = await _context.Users

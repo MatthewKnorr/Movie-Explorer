@@ -29,17 +29,22 @@
         <p id="likedMoviesCount"></p> 
     </div>
 </div>
-    <!-- Liked movie display area -->
-    <div id="likedMoviesCS">
-        <h2>Liked Movies</h2>
-        <ol id="likedMoviesListCS">
-            @foreach (var movie in Model.LikedMovies)
-            {
-                <li>@movie.Title</li>
-            }
-        </ol>
-        <p id="likedMoviesCountCS">@Model.LikedMovies.Count</p> 
-    </div>
+    <!-- Liked movie display area (for liked movies in the database) -->
+    @if (SignInManager.IsSignedIn(User))
+    {
+        <div id="likedMoviesCS">
+            <h2>Liked Movies</h2>
+            <ol id="likedMoviesListCS">
+            
+                @foreach (var movie in Model.LikedMovies)
+                {
+                    <li>@movie.Title</li>
+                }
+            
+                <p id="likedMoviesCountCS">@Model.LikedMovies.Count</p>
+            </ol>
+        </div>
+    }
 </div>
 
 @section Scripts {
